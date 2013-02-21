@@ -1,0 +1,321 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (85.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (234.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (21.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20130221182627)
+  [1m[35m (83.1ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `username` varchar(255), `provider` varchar(255), `uid` varchar(255), `oauth_token` varchar(255), `oauth_expires_at` datetime, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (135.8ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (89.1ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130221182627')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:00:12 -0500
+Processing by FrontpageController#index as HTML
+  Rendered frontpage/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 126ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:00:12 -0500
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:00:12 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:00:12 -0500
+Served asset /frontpage.css - 304 Not Modified (4ms)
+
+
+
+
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:00:13 -0500
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:00:13 -0500
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:00:13 -0500
+Served asset /frontpage.js - 304 Not Modified (7ms)
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:01:02 -0500
+Processing by FrontpageController#index as HTML
+  Rendered frontpage/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 80ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:01:02 -0500
+
+
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:02 -0500
+Served asset /application.css - 304 Not Modified (8ms)
+Served asset /frontpage.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:02 -0500
+
+
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:01:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+Served asset /jquery.js - 304 Not Modified (7ms)
+Served asset /application.js - 304 Not Modified (1ms)
+Served asset /frontpage.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:01:06 -0500
+Processing by FrontpageController#index as HTML
+  Rendered frontpage/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:01:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:06 -0500
+
+
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:01:06 -0500
+
+
+Served asset /application.css - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /frontpage.css - 304 Not Modified (4ms)
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:06 -0500
+Served asset /frontpage.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:01:16 -0500
+Processing by FrontpageController#index as HTML
+  Rendered frontpage/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:01:16 -0500
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:01:16 -0500
+Served asset /frontpage.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:16 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:16 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:16 -0500
+Served asset /frontpage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:01:17 -0500
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2013-02-21 14:01:22 -0500
+
+
+Started GET "/users/auth/facebook/callback?state=9a6538e65eae6e0819439b9ac1a36034aa4a95da9da67e10&code=AQBNhnMNkm2dyQ7_xbifEFBzn4qgXCtXSoYepHDwW-oIW6EBrlvz3Y9Zl05tgYltjcxBaePxYF0cF0qbDJvI4G6HRlOpQGb_EiROhZb60aQbH5OPBGIwzbtHeXvnWHRrDz52uR2SBCRYG669O9B5iNRZQn7UD-SoPpOyrZ7-4AxJc_0gDbYvZoYfhkdHftHJAI1ENfblkdNdPl-ZmiW97UiT" for 127.0.0.1 at 2013-02-21 14:01:22 -0500
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"state"=>"9a6538e65eae6e0819439b9ac1a36034aa4a95da9da67e10", "code"=>"AQBNhnMNkm2dyQ7_xbifEFBzn4qgXCtXSoYepHDwW-oIW6EBrlvz3Y9Zl05tgYltjcxBaePxYF0cF0qbDJvI4G6HRlOpQGb_EiROhZb60aQbH5OPBGIwzbtHeXvnWHRrDz52uR2SBCRYG669O9B5iNRZQn7UD-SoPpOyrZ7-4AxJc_0gDbYvZoYfhkdHftHJAI1ENfblkdNdPl-ZmiW97UiT"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '100001684731458' LIMIT 1[0m
+Completed 500 Internal Server Error in 97ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name):
+  app/models/user.rb:15:in `find_for_facebook_oauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /Users/reoki/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/reoki/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/reoki/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:05:40 -0500
+Processing by FrontpageController#index as HTML
+  Rendered frontpage/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+
+
+
+
+
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:05:40 -0500
+
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:40 -0500
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:40 -0500
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:05:40 -0500
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:40 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:40 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (1ms)
+Served asset /frontpage.css - 304 Not Modified (0ms)
+Served asset /frontpage.js - 304 Not Modified (4ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2013-02-21 14:05:45 -0500
+
+
+Started GET "/users/auth/facebook/callback?state=94e49f2f0f056453fdaae5e788d7b9ba16efee00d2b882ab&code=AQDkz16pKF_D0rqLhv1MY7_JTaLsHoWS7h7N6igA3EjGIe61F2Azt48xW_euGJYEWlcJPz02Thy1FtE-hrIz1UlK3im6cLsjDty5RUKqDk8p72CtHc6wzi_YICvyEsdYzSR17fopWPxM0lGOp1Pm7RtLCcVY9ARqctx6QSn4yVWCIQruYhtYpp8SZrXTCgi5jzYopdcZKdtBiu41Pgp4cMlW" for 127.0.0.1 at 2013-02-21 14:05:45 -0500
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"state"=>"94e49f2f0f056453fdaae5e788d7b9ba16efee00d2b882ab", "code"=>"AQDkz16pKF_D0rqLhv1MY7_JTaLsHoWS7h7N6igA3EjGIe61F2Azt48xW_euGJYEWlcJPz02Thy1FtE-hrIz1UlK3im6cLsjDty5RUKqDk8p72CtHc6wzi_YICvyEsdYzSR17fopWPxM0lGOp1Pm7RtLCcVY9ARqctx6QSn4yVWCIQruYhtYpp8SZrXTCgi5jzYopdcZKdtBiu41Pgp4cMlW"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '100001684731458' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'kimura@cybornet.com' LIMIT 1[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO `users` (`created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `last_sign_in_at`, `last_sign_in_ip`, `name`, `oauth_expires_at`, `oauth_token`, `provider`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `uid`, `updated_at`) VALUES ('2013-02-21 19:05:46', NULL, NULL, 'kimura@cybornet.com', '$2a$10$ODADIZhN3Ao5VXFrtO7bmehj8d3BCinO1yKg1xXlT9Lc0Zb9HT8Uq', NULL, NULL, 'Reoki Kimura', '2013-04-22 06:06:48', 'AAADSs57mp4UBAEGu6vs76xa615uAX2KAtlGNdv7cUm6wuN3h8GrLRZBoQ8c2Quw3hM83gFZCpaoqT76zCnUBuPgJWAiHOb17F7t9keCQZDZD', 'facebook', NULL, NULL, NULL, 0, '100001684731458', '2013-02-21 19:05:46')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2013-02-21 19:05:46', `current_sign_in_at` = '2013-02-21 19:05:46', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-02-21 19:05:46' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://depot.local/
+Completed 302 Found in 597ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:05:47 -0500
+Processing by FrontpageController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered frontpage/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:05:47 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:05:47 -0500
+Served asset /frontpage.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:47 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:47 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:47 -0500
+Served asset /frontpage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:05:47 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LV9CZDfh7gquxf1pvzuCTZVbWlTb7zu6HsrI6ccEtO8="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://depot.local/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Processing by FrontpageController#index as HTML
+  Rendered frontpage/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Served asset /frontpage.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Served asset /frontpage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:08:52 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2013-02-21 14:08:57 -0500
+
+
+Started GET "/users/auth/facebook/callback?state=60e6dd372560adc339339125a5d4493a54f5a1ca9894b572&code=AQBaUCPrOItK_ud8Ub0L2KaJ0QjptYg_R94U0UAFwAWz98327yeiBCRY9EWbfg87KujEXvrGnyP4Rrv2Y5PlTwraZFCodQISGtpuqavNwvSQTlT1z1Mi6G6qkbfE3N2HzvpaqYTeWapI2R4bz6ylsc7QxL-YlbGWp13_oQjk13dyxO5ef93SN_R33kZqapznhgxz07UCXGIrWuuy3zLc1kvx" for 127.0.0.1 at 2013-02-21 14:09:01 -0500
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"state"=>"60e6dd372560adc339339125a5d4493a54f5a1ca9894b572", "code"=>"AQBaUCPrOItK_ud8Ub0L2KaJ0QjptYg_R94U0UAFwAWz98327yeiBCRY9EWbfg87KujEXvrGnyP4Rrv2Y5PlTwraZFCodQISGtpuqavNwvSQTlT1z1Mi6G6qkbfE3N2HzvpaqYTeWapI2R4bz6ylsc7QxL-YlbGWp13_oQjk13dyxO5ef93SN_R33kZqapznhgxz07UCXGIrWuuy3zLc1kvx"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '100001684731458' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'kimura@cybornet.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `last_sign_in_at`, `last_sign_in_ip`, `name`, `oauth_expires_at`, `oauth_token`, `provider`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `uid`, `updated_at`) VALUES ('2013-02-21 19:09:02', NULL, NULL, 'kimura@cybornet.com', '$2a$10$4gY7Ypc9VNKTIKlC5Lqi0umokuTLpUbWlXYQpsIOlZq8IAX6JETqS', NULL, NULL, 'Reoki Kimura', '2013-04-22 19:09:01', 'AAADSs57mp4UBAF7wkNSEBAOxYsBeVpBjKKd9c6rFqRElU8Fy02vndRDU80HoBZAWg2wKvAe9xq3ljc41vGLG7GZANEMZADIPgi40CQL8wZDZD', 'facebook', NULL, NULL, NULL, 0, '100001684731458', '2013-02-21 19:09:02')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2013-02-21 19:09:02', `current_sign_in_at` = '2013-02-21 19:09:02', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2013-02-21 19:09:02' WHERE `users`.`id` = 2[0m
+  [1m[35m (42.2ms)[0m  COMMIT
+Redirected to http://depot.local/
+Completed 302 Found in 369ms (ActiveRecord: 44.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-21 14:09:02 -0500
+Processing by FrontpageController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered frontpage/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-21 14:09:02 -0500
+
+
+Started GET "/assets/frontpage.js?body=1" for 127.0.0.1 at 2013-02-21 14:09:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-21 14:09:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-21 14:09:02 -0500
+Started GET "/assets/frontpage.css?body=1" for 127.0.0.1 at 2013-02-21 14:09:02 -0500
+Served asset /frontpage.js - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (1ms)
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /frontpage.css - 304 Not Modified (0ms)
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-21 14:09:03 -0500
+Served asset /jquery.js - 304 Not Modified (6ms)

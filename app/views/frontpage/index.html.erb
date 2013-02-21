@@ -1,0 +1,6 @@
+Hello <%= current_user %>
+<div id="notice"><%= notice %></div>
+</br>
+
+<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></br>
+<%= link_to 'exit', destroy_user_session_path, method: :delete%>
