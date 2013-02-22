@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20130221182627) do
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
-    t.string   "username"
+    t.string   "name"
     t.string   "provider"
     t.string   "uid"
     t.string   "oauth_token"

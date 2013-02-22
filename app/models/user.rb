@@ -11,6 +11,15 @@ class User < ActiveRecord::Base
 
 def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
   user = User.where(:provider => auth.provider, :uid => auth.uid).first
+  # data actualization 
+  if user
+    if auth.credentials.expires_at < Time.now.to_i
+      user.name="nube"
+      user.oauth_token=auth.credentials.token
+      user.save
+    end
+  end
+  #  new user creation
   unless user
     user = User.create(name:auth.extra.raw_info.name,
                          provider:auth.provider,
